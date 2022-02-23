@@ -1,0 +1,266 @@
+/* &display=swap - добавить в конце строки при использовании плагина Google Fonts 
+&subset=cyrillic-ext - добавить (без пробела) к выше указанному для работы кириллического начертания*/
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,500,700,900&display=swap");
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+li {
+	list-style: none;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+img {
+	vertical-align: top;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+html {
+	font-size: 16px; /* по умолчанию */
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	line-height: 1;
+	background: #F5F5F5;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;	
+}
+/* ------------------------------ */
+.main {
+	flex-grow: 1;
+}
+
+[class*="__container"] {
+	max-width: 1050px;
+	margin: 0px auto;
+	padding: 0px 15px;
+}
+
+.header {
+	padding: 15px 0px 15px 0px;
+	background: #29C3BE;
+}
+
+/* promise */
+
+.wrapper {
+}
+.header {
+}
+.main {
+}
+.promise {
+	padding: 50px 0px 50px 0px;
+}
+.promise__container {
+}
+.promise__label {
+	margin: 0px 0px 68px 0px;
+}
+.label *:not(:last-child) {
+	margin: 0px 0px 33px 0px;
+}
+.label__name {
+	padding: 0px 0px 0px 32px;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 2;
+	letter-spacing: 2.5px;
+	text-transform: uppercase;
+	color: #5D62B5;
+	background: url('../img/logo_reg.svg') 0 -2px no-repeat;
+}
+.label__title {
+	font-weight: 900;
+	font-size: 36px;
+	line-height: 1.17;
+	color: #000000;
+}
+.promise__list {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0px -12px;
+	row-gap: 24px;
+
+}
+.promise__item {
+	padding: 0px 12px;
+	flex: 1 1 33.333%;
+	min-width: 260px;
+}
+.promise-block {
+	display: flex;
+	align-items: flex-start;
+	column-gap: 23px;
+}
+.promise-block__icon {
+	flex: 0 0 63px;
+}
+.promise-block__text {
+}
+.promise-block__title:not(:last-child) {
+	margin: 0px 0px 20px 0px;
+}
+.text-title {
+	font-weight: 900;
+	font-size: 19px;
+	line-height: 1.37;
+	color: #F2726F;
+}
+.promise-block__description {
+}
+.text-description {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.15px;
+	color: #4B4B4B;
+}
+
+/* services */
+
+.services {
+	padding: 110px 0px 112px 0px;
+	/* position: relative; */
+	overflow: hidden;
+}
+/* .services::before {
+	content: '';
+	position: absolute;
+	top: -40%;
+	left: 60%;
+	width: 100%;
+	height: 100%;
+	background: url('../img/services/Blob.png') 0 0 no-repeat;
+} */
+.services__container {
+	display: flex;
+	flex-direction: column;
+	/* position: relative; */
+}
+.services__label {
+	margin: 0px 0px 78px 0px;
+}
+.label {
+}
+.label__name {
+}
+.label__title {
+}
+.services__list {
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 24px;
+	margin: 0px -12px;
+}
+.services__list:not(:last-child) {
+	margin: 0px 0px 66px 0px;
+}
+.services__item {
+	padding: 0px 12px;
+	flex: 1 1 33.333%;
+	min-width: 260px;
+}
+.service:hover {
+	filter: drop-shadow(0px 8px 16px rgba(38, 38, 38, 0.24)) drop-shadow(0px 16px 24px rgba(38, 38, 38, 0.2));
+}
+.service__box {
+	padding: 50px 44px;
+	background: #FFFFFF;
+	border-radius: 20px;
+	height: 100%;
+	text-align: center;
+	/* display: flex;
+	flex-direction: column;
+	align-items: center; */
+}
+.service__image {
+}
+.service__image:not(:last-child) {
+	margin: 0px 0px 33px 0px;
+}
+.service__icon {
+}
+.service__title-block:not(:last-child) {
+	margin: 0px 0px 20px 0px;
+}
+.text-title {
+}
+.service__description {
+}
+.text-description {
+}
+.services__button {
+}
+.button {
+	position: relative;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 2;
+	align-self: center;
+	text-align: center;
+	letter-spacing: 0.15px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	background: #F2726F;
+	border-radius: 8px;
+	padding: 12px 25px;
+}
+.button::before {
+	content:'';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 48px;
+	background: rgba(255,255,255,0.3);
+	border-radius: 8px;
+	transition: all 1s ease;
+}
+.button:hover::before {
+	width: 100%;
+}
+
+/* ---- */
+
+.footer {
+	padding: 15px 0px 15px 0px;
+	background: #29C3BE;
+}
